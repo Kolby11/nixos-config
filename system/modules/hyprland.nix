@@ -7,6 +7,9 @@
 
   environment.systemPackages = with pkgs; [
     libnotify
+    kitty
+    swayidle
+    swaylock-effects
     wl-clipboard
     waybar
   ];

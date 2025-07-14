@@ -10,7 +10,9 @@
     ./networking.nix
     ./nixsettings.nix
     ./packages.nix
+    ./polkit.nix
     ./programs.nix
+    ./security.nix
     ./services.nix
     ./sound.nix
     ./time.nix

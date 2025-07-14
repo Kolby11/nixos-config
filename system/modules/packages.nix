@@ -11,6 +11,8 @@
     openssl.dev
     pkg-config
     wget
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-wlr
   ];
 }
 
