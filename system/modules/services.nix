@@ -9,7 +9,8 @@
 			sddm = {
 				enable = true;
 				wayland.enable = true;
-			}
+			};
+			defaultSession = "hyprland";
 		};
 		# xserver = {
 		# 	enable = true;
