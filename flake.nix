@@ -27,7 +27,7 @@
     };
 
     homeConfigurations = {
-      gpskwlkr = home-manager.lib.homeManagerConfiguration {
+      mato = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [ ./home ];
         extraSpecialArgs = {

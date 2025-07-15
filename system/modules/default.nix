@@ -18,5 +18,6 @@
     ./time.nix
     ./theme.nix
     ./users.nix
+    ./virtualization.nix
   ];
 }

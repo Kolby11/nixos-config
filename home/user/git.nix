@@ -4,8 +4,8 @@ let
 in
 {
   programs.git = {
-      enable = true;
-      userName = userName;
-      userEmail = email;
+    enable = true;
+    userName = userName;
+    userEmail = email;
   };
 }
