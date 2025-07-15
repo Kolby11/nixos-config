@@ -2,6 +2,7 @@
   imports = [
     ./git.nix
     ./packages.nix
+    ./environment.nix
   ];
 
   nixpkgs = {
