@@ -10,6 +10,9 @@
 			xkb = {
 				layout = "us";
 			};
+			displayManager = {
+				sddm.enable = true;
+			};
 		};
   };
 }

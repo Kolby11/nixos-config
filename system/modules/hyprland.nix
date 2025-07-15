@@ -6,6 +6,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    hyprpaper
     libnotify
     kitty
     swayidle
