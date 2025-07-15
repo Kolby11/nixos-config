@@ -1,5 +1,5 @@
 { ... }:
 
 {
-    time.timeZone = "Europe/Bratislava";
+  time.timeZone = "Europe/Bratislava";
 }
