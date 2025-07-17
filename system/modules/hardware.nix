@@ -3,6 +3,11 @@
 {
 	hardware = {
 		bluetooth.enable = true;
-		graphics.enable = true;
+		graphics ={
+			enable = true;
+			extraPackages = [
+				rocmPackages.clr.icd
+			];	
+		}
 	};
 }

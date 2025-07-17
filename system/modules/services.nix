@@ -12,11 +12,12 @@
 			};
 			defaultSession = "hyprland";
 		};
-		# xserver = {
-		# 	enable = true;
-		# 	xkb = {
-		# 		layout = "us";
-		# 	};
-		# };
+		xserver = {
+			enable = true;
+			xkb = {
+				layout = "us";
+			};
+			videoDrivers = lib.mkIf config.virtualisation.virtualbox.guest.enable [ "virtualbox" ];
+		};
   };
 }
