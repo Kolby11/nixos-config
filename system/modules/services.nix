@@ -12,12 +12,12 @@
 			};
 			defaultSession = "hyprland";
 		};
-		xserver = {
-			enable = true;
-			xkb = {
-				layout = "us";
-			};
-			videoDrivers = lib.mkIf config.virtualisation.virtualbox.guest.enable [ "amdgpu" "virtualbox" ];
-		};
+		# xserver = {
+		# 	enable = true;
+		# 	xkb = {
+		# 		layout = "us";
+		# 	};
+		# 	videoDrivers = [ "amdgpu" "virtualbox" ];
+		# };
   };
 }
