@@ -17,7 +17,7 @@
 			xkb = {
 				layout = "us";
 			};
-			videoDrivers = lib.mkIf config.virtualisation.virtualbox.guest.enable [ "virtualbox" ];
+			videoDrivers = lib.mkIf config.virtualisation.virtualbox.guest.enable [ "amdgpu" "virtualbox" ];
 		};
   };
 }
