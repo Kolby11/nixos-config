@@ -3,6 +3,7 @@
     ./git.nix
     ./packages.nix
     ./environment.nix
+    ./programs.nix
   ];
 
   nixpkgs = {
