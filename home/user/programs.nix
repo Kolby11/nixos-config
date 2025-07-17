@@ -1,19 +1,21 @@
 { inputs, ... }:
-{
-  programs.firefox = {
-    enable = true;
 
-    profiles.mato = {
-        extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
-        ];
+{
+  programs = {
+    home-manager.enable = true;
+
+    firefox = {
+      enable = true;
+      # profiles.mato = {
+      #   extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+      #   ];
+      # };
+    };
+
+    vscode = {
+      enable = true;
+      # extensions = with pkgs.vscode-extensions; [
+      # ];
     };
   };
-
-  programs.vscode = {
-    enable = true;
-    extensions = with pkgs.vscode-extensions; [
-    ];
-  };
-
-  programs.home-manager.enable = true;
 }
