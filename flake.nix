@@ -4,8 +4,10 @@
   inputs = {
       nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
       nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
-      home-manager.url = "github:nix-community/home-manager/release-25.05";
-      home-manager.inputs.nixpkgs.follows = "nixpkgs";
+      home-manager = {
+        url = "github:nix-community/home-manager";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
 
       firefox-addons = {
         url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
