@@ -8,5 +8,8 @@ in
     ".config/swaylock".source = "${configDir}/swaylock";
     ".config/wlogout".source = "${configDir}/wlogout";
     ".config/waybar".source = "${configDir}/waybar";
+    ".config/btop".source = "${configDir}/btop";
+    ".config/wofi".source = "${configDir}/wofi";
+    ".config/mako".source = "${configDir}/mako";
   };
 }
