@@ -1,9 +1,16 @@
-let configDir = ../config;
+{ config, pkgs, lib, ... }:
+
+let
+  configDir = ../config;
 in
 {
   home.file = {
     ".config/kitty".source = "${configDir}/kitty";
-    ".config/hypr".source = "${configDir}/hypr";
+    # Hyprland — symlink only the files that will not be modified by user
+    ".config/hypr" = {
+      source = "${configDir}/hypr";
+      recursive = true;
+    };
     ".config/swayidle".source = "${configDir}/swayidle";
     ".config/swaylock".source = "${configDir}/swaylock";
     ".config/wlogout".source = "${configDir}/wlogout";
@@ -13,3 +20,4 @@ in
     ".config/mako".source = "${configDir}/mako";
   };
 }
+

@@ -42,6 +42,9 @@
         extraSpecialArgs = {
           inherit pkgs-unstable;
           inherit inputs;
+          context = self;
+          runtimeRoot = "/home/mato/.config";
+          hm = home-manager.lib.hm;
         };
       };
     };
